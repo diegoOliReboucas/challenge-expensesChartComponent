@@ -1,0 +1,310 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  background: hsl(27, 66%, 92%);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background: hsl(10, 79%, 65%);
+  border-radius: 15px;
+  width: 405px;
+  height: 90px;
+  position: absolute;
+  top: 10%;
+  margin-top: -25px; 
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+}
+header h1{
+  margin-top: 5px;
+}
+
+main{
+  background: white;
+  width: 405px;
+  padding: 30px;
+  position: absolute;
+  border-radius: 15px;
+  top: 33%;
+  margin-top: -25px; 
+  height: 350px;
+}
+main h2{
+  color: hsl(25, 47%, 15%);
+  font-size: 2rem;
+}
+main ul{
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-top: 120px;
+  height: 120px;
+  border-bottom: 1px dashed rgba(0, 0, 0, .5);
+}
+.mon{
+  background: hsl(10, 79%, 65%);
+  width: 45px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.mon::after{
+  content: 'mon';
+  position: absolute;
+  top: 55px;
+  right: 8px;
+  color: grey;
+}
+.mon::before{
+  content: '$17.45';
+  left: -8px;
+  top: -35px;
+  color: white;
+  background: black;
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  visibility: var(--visib, hidden);
+}
+.tue{
+  background: hsl(10, 79%, 65%);
+  width: 45px;
+  height: 90px;
+  margin-top: -30px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.tue::after{
+  content: 'tue';
+  position: absolute;
+  top: 95px;
+  right: 13px;
+  color: grey;
+}
+.tue::before{
+  content: '$34.91';
+  left: -8px;
+  top: -35px;
+  color: white;
+  background: black;
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  visibility: var(--visib, hidden);
+}
+.wed{
+  background: hsl(10, 79%, 65%);
+  width: 45px;
+  height: 130px;
+  margin-top: -70px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.wed::after{
+  content: 'wed';
+  position: absolute;
+  top: 135px;
+  right: 13px;
+  color: grey;
+}
+.wed::before{
+  content: '$52.36';
+  left: -8px;
+  top: -35px;
+  color: white;
+  background: black;
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  visibility: var(--visib, hidden);
+}
+.thu{
+  background: hsl(10, 79%, 65%);
+  width: 45px;
+  height: 85px;
+  margin-top: -25px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.thu::after{
+  content: 'thu';
+  position: absolute;
+  top: 90px;
+  right: 13px;
+  color: grey;
+}
+.thu::before{
+  content: '$31.07';
+  left: -8px;
+  top: -35px;
+  color: white;
+  background: black;
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  visibility: var(--visib, hidden);
+}
+.fri{
+  background: hsl(10, 79%, 65%);
+  width: 45px;
+  height: 60px;
+  margin-top: 0px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.fri::after{
+  content: 'fri';
+  position: absolute;
+  top: 65px;
+  right: 13px;
+  color: grey;
+}
+.fri::before{
+  content: '$23.39';
+  left: -8px;
+  top: -35px;
+  color: white;
+  background: black;
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  visibility: var(--visib, hidden);
+}
+.sat{
+  background: hsl(10, 79%, 65%);
+  width: 45px;
+  height: 115px;
+  margin-top: -55px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.sat::after{
+  content: 'sat';
+  position: absolute;
+  top: 120px;
+  right: 13px;
+  color: grey;
+}
+.sat::before{
+  content: '$43.28';
+  left: -8px;
+  top: -35px;
+  color: white;
+  background: black;
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  visibility: var(--visib, hidden);
+}
+.sun{
+  background: hsl(10, 79%, 65%);
+  width: 45px;
+  height: 70px;
+  margin-top: -10px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.sun::after{
+  content: 'sun';
+  position: absolute;
+  top: 75px;
+  right: 13px;
+  color: grey;
+}
+.sun::before{
+  content: '$25.48';
+  left: -8px;
+  top: -35px;
+  color: white;
+  background: black;
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  visibility: var(--visib, hidden);
+}
+
+.dados{
+  margin-top: 20px;
+  display: flex;
+  height: 110px;
+  justify-content: space-between;
+}
+.dados p {
+  color: grey;
+}
+.dados h1{
+  font-size: 2.5rem;
+  color: hsl(25, 47%, 15%);
+}
+
+.dados span{
+  display: block;
+  margin-top: 20px;
+  margin-left: 60px;
+  font-weight: bold;
+  color: hsl(25, 47%, 15%);
+}
+
+@media (max-width: 500px){
+  header{
+    width: 350px;
+  }
+  main{
+    width: 350px;
+  }
+  main ul li{
+   width: 37px;
+  }
+}
+@media (max-width: 380px){
+  header{
+    width: 300px;
+  }
+  main{
+    width: 300px;
+    height: 400px;
+  }
+  .mon::after, .wed::after{
+    left: 2px;
+  }
+  .tue::after, .thu::after, .fri::after, .sat::after, .sun::after{
+    left: 6px;
+  }
+  .mon, .tue, .wed, .thu, .fri, .sat, .sun{
+    width: 35px;
+  }
+  main ul{
+    gap: 10px;
+  }
+}
